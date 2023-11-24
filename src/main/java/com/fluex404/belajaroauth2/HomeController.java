@@ -11,4 +11,9 @@ public class HomeController {
     public ResponseEntity userInfo(OAuth2AuthenticationToken token) {
         return ResponseEntity.ok(token);
     }
+
+    @GetMapping("/test")
+    public ResponseEntity test(){
+        return ResponseEntity.ok("test xasdflj");
+    }
 }
